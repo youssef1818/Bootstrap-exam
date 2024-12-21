@@ -1,0 +1,524 @@
+/*==== golbal css====== */
+.body-font{
+    font-family: "Poppins", sans-serif;
+}
+.header-font{
+    font-family: "Montserrat", sans-serif;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.fw-400{
+    font-weight:400;
+}
+.fw-500{
+    font-weight:500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-800{
+    font-weight: 800;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-900{
+    font-weight: 900;
+}
+:root{
+    
+    --main-color:#1C1C1C;
+}
+.bg-color{
+    background-color: #F7F7F7;
+}
+.text-main{
+    color: #343434;
+}
+.top{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../imgs/imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+@keyframes typing {
+    /* Typing "Developer" */
+    0% { content: "D|"; }
+    2% { content: "De|"; }
+    4% { content: "Dev|"; }
+    6% { content: "Deve|"; }
+    8% { content: "Devel|"; }
+    10% { content: "Develo|"; }
+    12% { content: "Develop|"; }
+    14% { content: "Develope|"; }
+    16% { content: "Developer|"; }
+
+    /* Erasing "Developer" */
+    18% { content: "Develope|"; }
+    19% { content: "Develop|"; }
+    20% { content: "Develo|"; }
+    21% { content: "Devel|"; }
+    22% { content: "Deve|"; }
+    23% { content: "Dev|"; }
+    24% { content: "De|"; }
+    25% { content: "|"; }
+
+    /* Typing "Larry Daniels" */
+    27% { content: "L|"; }
+    29% { content: "La|"; }
+    31% { content: "Lar|"; }
+    33% { content: "Larr|"; }
+    35% { content: "Larry|"; }
+    37% { content: "Larry D|"; }
+    39% { content: "Larry Da|"; }
+    41% { content: "Larry Dan|"; }
+    43% { content: "Larry Dani|"; }
+    45% { content: "Larry Danie|"; }
+    47% { content: "Larry Daniel|"; }
+    49% { content: "Larry Daniels|"; }
+
+    /* Erasing "Larry Daniels" */
+    51% { content: "Larry Daniel|"; }
+    54% { content: "Larry Dani|"; }
+    57% { content: "Larry Dan|"; }
+    59% { content: "Larry Da|"; }
+    60% { content: "Larry D|"; }
+    63% { content: "Larry|"; }
+    66% { content: "Larr|"; }
+    67% { content: "Lar|"; }
+    69% { content: "La|"; }
+    71% { content: "L|"; }
+    73% { content: "|"; }
+
+    /* Typing "Designer" */
+    74% { content: "D|"; }
+    76% { content: "De|"; }
+    78% { content: "Des|"; }
+    80% { content: "Desi|"; }
+    83% { content: "Desig|"; }
+    86% { content: "Design|"; }
+    88% { content: "Designer|"; }
+
+    /* Erasing "Designer" */
+    90% { content: "Design|"; }
+    92% { content: "Desig|"; }
+    94% { content: "Desi|"; }
+    96% { content: "Des|"; }
+    97% { content: "De|"; }
+    99% { content: "D|"; }
+    100% { content: "|"; }
+
+ 
+}
+
+
+
+    /*==== Navbar====== */
+
+.nav-link {
+       
+        color: var(--main-color);
+        font-size: 14px;
+        font-weight: 400;
+
+}
+.navbar-brand{
+    font-size: 18px;
+    font-weight: 800;
+}
+.navbar a{
+    position: relative;
+}
+.navbar a::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0px;
+    background-color: rgb(241, 241, 241);
+    bottom: 9px;
+    left: 13%;
+    
+    
+
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+/* .navbar li a:hover::after{
+  width: 40px;
+} */
+body:has(#home:target) .home a::after{
+    width: 70%;
+  }
+  body:has(#about:target) .about a::after{
+    width: 70%;
+  }
+  body:has(#services:target) .services a::after{
+    width: 70%;
+  }
+  body:has(#work:target) .work a::after{
+    width: 70%;
+  }
+  body:has(#clients:target) .clients a::after{
+    width: 70%;
+  }
+  body:has(#team:target) .team a::after{
+    width: 70%;
+  }
+  body:has(#contact:target) .contact a::after{
+    width: 70%;
+  }
+    /*==== Header====== */
+.main h4 span::after{
+    content: "";
+    animation-name: typing;
+    font-weight: 400;
+    animation-duration: 5s;
+    /* animation-direction: alternate; */
+    animation-iteration-count: infinite;
+    
+}
+.main ul li{
+    font-size: 14px;
+    
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+    /*==== About====== */
+    .progress, .progress-stacked {
+        --bs-progress-bar-color: #fff;
+        --bs-progress-bar-bg: #181818;
+        display: flex;
+        height: 22px;
+        border-radius: 0.2rem;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+        background-color: #f7f7f7;
+    }
+    .progress-bar{
+        border-radius: 3px;
+    }
+    .fs-13{
+        font-size: 13px;
+    }
+    .fs-14{
+        font-size: 14px;
+    }
+    .fs-15{
+        font-size: 15px;
+    }
+    .fs-12{
+        font-size: 12px;
+    }
+    .fs-16{
+        font-size: 16px;
+    }
+    .fs-18{
+        font-size: 18px;
+    }
+   .mybtn{
+        background-color: var(--main-color);
+        transition: 0.5s;
+        color: white;
+    }
+    .mybtn:hover{
+        background-color: white;
+        color: var(--main-color);
+        border-color: var(--main-color);
+    }
+    .inner-image{
+        position: relative;
+    }
+    .inner-image::after{
+        content: "";
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        left: -30px;
+        bottom: -30px;
+        background-image: url(../imgs/imgs/dots.png);
+        background-repeat: repeat;
+        z-index: -1;
+    }
+
+    /*==== Services====== */
+#services{
+    background-color: #F7F7F7;
+ }
+ .services h3{
+    position: relative;
+    z-index: 1;
+ }
+.services h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.card-inner i{
+    background-color: #F7F7F7;
+    transition: 0.5s;
+}
+.card-inner:hover {
+     i{
+
+        background-color: black;
+        color: whitesmoke;
+    }
+}
+    /*==== Portfolio====== */
+.portfolio h3{
+        position: relative;
+        z-index: 1;
+     }
+.portfolio h3::after{
+        content: "";
+        width: 100%;
+        height: 30px;
+        background-image: url(../imgs/imgs/dots.png);
+        background-repeat: repeat;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        z-index: -1;
+    }
+    
+ 
+    .nav-link:focus, .nav-link:hover {
+        color: black;
+    }
+    .port-anim{
+
+        top:20px;
+        bottom:20px;
+        left:20px;
+        right:20px;
+        opacity: 0;
+        transition: 1s;
+    }
+    .port-anim i{
+        transform: translateY(10px);
+        transition: 0.5s;
+        background-color: black;
+        color: white;
+        border: solid 1px black;
+    }
+    .port-anim h5{
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .port-item:hover .port-anim{
+        opacity: 0.9;
+    }
+    .port-item:hover .port-anim i{
+        transform: translateY(0px);
+    }
+    .port-item:hover .port-anim h5{
+        transform: translateY(0px);
+    }
+    .anim-icons i:hover{
+        background-color: white;
+        color: black;
+    }
+    /*==== Testmolians====== */
+.client-title h3{
+        position: relative;
+        z-index: 1;
+ }
+.client-title h3::after{
+        content: "";
+        width: 100%;
+        height: 30px;
+        background-image: url(../imgs/imgs/dots.png);
+        background-repeat: repeat;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        z-index: -1;
+    }
+.client-card img{
+    width: 80px;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    background-color: #d6d6d6;
+    margin-left: 10px;
+    border-radius: 50%;
+    /* border-bottom: 10px solid transparent; */
+ 
+}
+.carousel-indicators [data-bs-target]:hover{
+    background-color: rgb(134, 151, 145);
+}
+.carousel-indicators .active{
+    background-color: rgb(134, 151, 145);
+}
+
+#clients{
+    padding-bottom: 100px;
+}
+    /*==== Team====== */
+.team h3{
+        position: relative;
+        z-index: 1;
+ }
+.team h3::after{
+        content: "";
+        width: 100%;
+        height: 30px;
+        background-image: url(../imgs/imgs/dots.png);
+        background-repeat: repeat;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        z-index: -1;
+ }
+ #team{
+    background-color: #F7F7F7;
+ }
+.item-text{
+    background-color: #5B5B5B;
+}
+.team-anim{
+    transform: rotateY(180deg);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.icon i{
+    font-size: 8px;
+    padding: 5px;
+    opacity: 1;
+    
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255,1);
+    border: solid 0.1px black;
+    
+}
+.icon{
+    opacity:1 ;
+}
+.item-image img{
+    transition: 0.5s;
+    
+}
+.item-image{
+    overflow: hidden;
+}
+.item-image:hover {
+    .team-anim{
+
+        transform: rotateY(180deg);
+        opacity: 0.9;
+        transform: scale(1.95);
+    }
+    img{
+        transform: scale(1.2);
+    }
+}
+.icon i:hover{
+    background-color: white;
+    color: black;
+}
+#face{
+    font-size: 8px; 
+    padding: 5px 6px;
+}
+    /*==== Contact====== */
+    .contact h3{
+        position: relative;
+        z-index: 1;
+ }
+.contact h3::after{
+        content: "";
+        width: 100%;
+        height: 30px;
+        background-image: url(../imgs/imgs/dots.png);
+        background-repeat: repeat;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        z-index: -1;
+ }
+ .info-icon i{
+    background-color: #F4F4F4;
+    padding: 16px;
+    transition: 0.5s;
+ }
+ .info-card:hover i{
+    background-color: black;
+    color: white;
+ }
+ .formm input{
+    background-color: #F4F4F4;
+ }
+ .form-control{
+   background-color: #F4F4F4;
+   color: #F4F4F4;
+ }
+ .btn{
+    background-color: #1c1c1c;
+    padding: 10px 40px;
+    color: #eee;
+ }
+ .btn:hover {
+    color: #020202;
+    background-color: #ffffff;
+    border-color: #000000;
+}
+
+nav.sticky{
+    background-color: black;
+}
+@media  screen and (max-width:768px) {
+    body:has(#home:target) .home a::after{
+        width: 0%;
+      }
+      body:has(#about:target) .about a::after{
+        width: 0%;
+      }
+      body:has(#services:target) .services a::after{
+        width: 0%;
+      }
+      body:has(#work:target) .work a::after{
+        width: 0%;
+      }
+      body:has(#clients:target) .clients a::after{
+        width: 0%;
+      }
+      body:has(#team:target) .team a::after{
+        width: 0%;
+      }
+      body:has(#contact:target) .contact a::after{
+        width: 0%;
+      }
+      ul{
+        text-align: center;
+      }
+}
+.last{
+    background-color: #1C1C1C;
+}
+.last p{
+    color:rgb(116, 129, 130)
+}
